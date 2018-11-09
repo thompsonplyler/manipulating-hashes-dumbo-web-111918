@@ -9,6 +9,6 @@ def second_challenge
 
   groceries.values.join(",")
 
-binding.pry
+# binding.pry
 
 end
