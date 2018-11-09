@@ -21,6 +21,7 @@ def first_challenge
                 flavor.delete_if("strawberry")
               end
             end
+          end
 
 
 
