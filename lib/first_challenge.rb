@@ -16,11 +16,11 @@ def first_challenge
 
   contacts.each do |name, trait|
           if trait == :favorite_icecream_flavors
-            binding.pry
-            trait.delete_if("strawberry")
-
-          end
-        end
+            trait.each do |flavor|
+              if flavor == "strawberry"
+                flavor.delete_if("strawberry")
+              end
+            end
 
 
 
