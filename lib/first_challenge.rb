@@ -13,7 +13,13 @@ def first_challenge
     }
   }
 
-contacts["Freddy Mercury"][:favorite_icecream_flavors].shift
+  contacts.each do |name, trait|
+          if trait == :favorite_icecream_flavors
+            trait.delete_if("strawberry")
+          end
+        end
+
+
 
   #remember to return your newly altered contacts hash!
   contacts
