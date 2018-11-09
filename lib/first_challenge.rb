@@ -18,7 +18,7 @@ def first_challenge
           if trait == :favorite_icecream_flavors
             trait.each do |flavor|
               if flavor == "strawberry"
-                flavor.delete_if("strawberry")
+                flavor.delete("strawberry")
               end
             end
           end
